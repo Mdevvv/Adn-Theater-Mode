@@ -1,11 +1,10 @@
 var keyName = "Adn-Theater-Mode";
 
-var styleTagId = "customStylesAdnTheaterMode";
+var styleTagId = "c";
 
 // Function to detect URL changes
 function onUrlChange() {
-    if(window.location.href.startsWith("https://animationdigitalnetwork.fr/video/")  && localStorage.getItem(keyName) == "true") {
-        console.log("URL changed to:", window.location.href);
+    if(window.location.href.startsWith("https://animationdigitalnetwork.fr/video/") && localStorage.getItem(keyName) == "true") {
         changeCSS();
     }
     else {
@@ -38,7 +37,7 @@ if(localStorage.getItem(keyName) === null) {
     localStorage.setItem(keyName, false);
 }
 
-if(localStorage.getItem(keyName) == "true") {
+if(window.location.href.startsWith("https://animationdigitalnetwork.fr/video/") && localStorage.getItem(keyName) == "true") {
     changeCSS();
 }
 
@@ -57,18 +56,25 @@ function changeCSS() {
 }
 
 function backCSS() {
-    var styleTag = document.getElementById(styleTagId);
-    if (styleTag) {
-        styleTag.parentNode.removeChild(styleTag);
+    //initialase the style
+    try {
+        console.log(document.getElementById(styleTagId).remove() == None ? "" : "");
+        
     }
+    catch(err) {
+        
+    }
+
+    if (document.getElementById(styleTagId)) {
+        document.getElementById(styleTagId).parentNode.removeChild(document.getElementById(styleTagId));
+    }
+    
 }
+
 
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-    //   console.log(sender.tab ?
-    //               "from a content script:" + sender.tab.url :
-    //               "from the extension");
       if (request.greeting === "hello")
         sendResponse({farewell: localStorage.getItem(keyName)});
       else if (request.greeting === "change") {
