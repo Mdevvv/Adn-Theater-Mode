@@ -10,6 +10,7 @@ function onUrlChange() {
     else {
         backCSS();
     }
+    
 }
 
 // Initial URL
