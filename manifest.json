@@ -6,7 +6,8 @@
     "permissions": [
         "tabs",
         "activeTab",
-        "scripting"
+        "scripting",
+        "webNavigation"
     ],
     "icons": {
       "16": "images/icon-16.png",
@@ -25,16 +26,16 @@
       }
     },
     "host_permissions": [
-      "https://animationdigitalnetwork.fr/video/*"
+      "https://animationdigitalnetwork.fr/*"
     ],
+
     "content_scripts": [
       {
-        "matches": ["https://animationdigitalnetwork.fr/video/*"],
-        "js": ["content.js"],
-        "run_at": "document_end"
+        "matches": ["https://animationdigitalnetwork.fr/*"],
+        "js": ["content.js"]
       }
     ],
     "author": "contact@septmg.fr",
-    "homepage_url": "https://septmg.fr"
+    "homepage_url": "https://septmg.fr/github"
   }
   
