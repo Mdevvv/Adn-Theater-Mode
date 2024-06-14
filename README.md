@@ -29,7 +29,7 @@ Adn Theater Mode is a Chrome extension that modifies the CSS of the [Animation D
 ## Usage
 
 1. Navigate to the Animation Digital Network (ADN) website.
-2. The extension will automatically modify the CSS to optimize the video display size. if you had enable it
+2. The extension will automatically modify the CSS to optimize the video display size. If you enabled it
    
     ![disable](https://i.imgur.com/rBKuDnA.png) ![enable](https://i.imgur.com/llOg3g5.png)
 3. Enjoy watching videos with an enhanced viewing experience.
