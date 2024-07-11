@@ -4,7 +4,7 @@
     var goodURL = false
     try {
         const response = await chrome.tabs.sendMessage(tab.id, {greeting: "location"});
-        goodURL = response.farewell.startsWith("https://animationdigitalnetwork.fr")
+        goodURL = response.farewell.startsWith("https://animationdigitalnetwork.com")
     }
     catch(err) {
         

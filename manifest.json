@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Adn Theater Mode",
-    "version": "1.0",
+    "version": "1.2",
     "description": "Animation Digital Network Theater Mode.",
     "permissions": [
         "tabs",
@@ -26,16 +26,16 @@
       }
     },
     "host_permissions": [
-      "https://animationdigitalnetwork.fr/*"
+      "https://animationdigitalnetwork.com/*"
     ],
 
     "content_scripts": [
       {
-        "matches": ["https://animationdigitalnetwork.fr/*"],
+        "matches": ["https://animationdigitalnetwork.com/*"],
         "js": ["content.js"]
       }
     ],
-    "author": "contact@septmg.fr",
-    "homepage_url": "https://septmg.fr/github"
+    "author": "Mdevvv",
+    "homepage_url": "https://github.com/Mdevvv"
   }
   

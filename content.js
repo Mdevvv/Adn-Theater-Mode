@@ -4,7 +4,7 @@ var styleTagId = "c";
 
 // Function to detect URL changes
 function onUrlChange() {
-    if(window.location.href.startsWith("https://animationdigitalnetwork.fr/video/") && localStorage.getItem(keyName) == "true") {
+    if(window.location.href.startsWith("https://animationdigitalnetwork.com/video/") && localStorage.getItem(keyName) == "true") {
         changeCSS();
     }
     else {
@@ -36,7 +36,7 @@ if(localStorage.getItem(keyName) === null) {
     localStorage.setItem(keyName, false);
 }
 
-if(window.location.href.startsWith("https://animationdigitalnetwork.fr/video/") && localStorage.getItem(keyName) == "true") {
+if(window.location.href.startsWith("https://animationdigitalnetwork.com/video/") && localStorage.getItem(keyName) == "true") {
     changeCSS();
 }
 

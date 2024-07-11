@@ -2,7 +2,7 @@
 
 ## Description
 
-Adn Theater Mode is a Chrome extension that modifies the CSS of the [Animation Digital Network (ADN)](https://animationdigitalnetwork.fr/) website to provide a better viewing experience for videos. This extension is designed to enhance the video display size, making it more comfortable and convenient for users.
+Adn Theater Mode is a Chrome extension that modifies the CSS of the [Animation Digital Network (ADN)](https://animationdigitalnetwork.com/) website to provide a better viewing experience for videos. This extension is designed to enhance the video display size, making it more comfortable and convenient for users.
 
 ![!](https://i.imgur.com/VlB6Dlm.png)
 
